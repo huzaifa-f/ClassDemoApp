@@ -4,11 +4,15 @@ import android.media.Image
 
 data class Yugioh(
     val name: String,
-    //val monster: String,
-    val level: Int,
-    //val rarity: String,
+    val age: Int,
+    val image: String,
+    val gender: String,
+    val universe: String,
     val id: Int,
-    val image: Int,
-    val age: Int
+    val iconic: String,
+    val types: String,
+    val relation: List<Int>
 )
+
+
 
