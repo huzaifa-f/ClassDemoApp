@@ -50,6 +50,7 @@ class CharacterAdapter(private val characters: MutableList<Yugioh>) :
         Glide
             .with(holder.itemView.context)
             .load(character.image)
+            .override(500)
             .into(holder.characterImage)
 
         holder.characterName.text = character.name

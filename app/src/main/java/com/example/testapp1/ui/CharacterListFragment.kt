@@ -69,7 +69,7 @@ class CharacterListFragment : Fragment() {
     ) = Yugioh(
         name = name,
         age = Random.nextInt(10, 99),
-        image = "https://rickandmortyapi.com/api/character/avatar/291.jpeg",
+        image = "https://assets.dicebreaker.com/yu-gi-oh-dark-magician-anime-yugi.png/BROK/thumbnail/1600x900/quality/100/yu-gi-oh-dark-magician-anime-yugi.png",
         gender = gender,
         universe = location,
         id = id,

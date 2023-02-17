@@ -1,11 +1,14 @@
 package com.example.testapp1.ui
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.testapp1.R
 
 
@@ -26,6 +29,8 @@ class CharacterDetailFragment : Fragment() {
             val universe = requireArguments().getString("universe")
             val types = requireArguments().getString("types")
             val iconic = requireArguments().getString("iconic")
+            val imageView = view.findViewById<ImageView>(R.id.character_image)
+            Glide.with(this).load(image).into(imageView)
 
             view.findViewById<TextView>(R.id.character_universe).text = universe
             view.findViewById<TextView>(R.id.character_types).text = types
